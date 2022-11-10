@@ -1,0 +1,109 @@
+#m-1668066269115{
+}
+#m-1668066269115 label{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px!important;
+	padding-bottom: 5px!important;
+	line-height: 1.2em!important;
+}
+#m-1668066269115 .gf_swatch{
+	background: #fff;
+	display: inline-flex;
+	justify-content: center;
+	margin-right: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	width: auto;
+	height: 44px;
+	line-height: 44px;
+	border: 1px solid #dddcdc;
+	font-size: 16px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+	padding: 0;
+	position: relative;
+}
+#m-1668066269115 .gf_swatch span{
+	pointer-events: none;
+}
+#m-1668066269115 .gf_swatch.gf_selected{
+	box-shadow: 0px 0px 0px 1px #000000;
+}
+.gf_selected{
+	position: relative;
+}
+.gf_selected .removeSelection{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	display: block;
+	background: #000;
+	border-radius: 25px;
+	z-index: 99;
+}
+.gf_swatch .hoverText{
+	position: absolute;
+	background-color: #d2f6f6;
+	color: #333;
+	font-size: 13px;
+	line-height: 1;
+	border-radius: 5px;
+	width: fit-content;
+	min-width: 110px;
+	text-align: center;
+	height: fit-content;
+	padding: 5px 20px;
+	bottom: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	pointer-events: none;
+}
+.gf_swatch .hoverText:before{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top-color: red;
+	border: 8px solid transparent;
+	border-top-color: #d2f6f6;
+	bottom: -14px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.gf_swatch:hover .hoverText{
+	bottom: calc(100% + 6px);
+	opacity: 1;
+	pointer-events: visible;
+}
+.gf_selected .removeSelection:before,.gf_selected .removeSelection:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	width: 70%;
+	height: 2px;
+	background: #fff;
+}
+.gf_selected .removeSelection:before{
+	transform: translate(-50%,-50%) rotate(135deg);
+}
+.customCanvasTypeSelectorContainer .gf_swatches-option3{
+	float: unset;
+	padding: 0;
+}
+.product-personalizer > div:not(.cp-sel-Photos){
+	display: none;
+	height: 0;
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
